@@ -18,6 +18,7 @@ $vCenters = @(
 
 #This command should allow you to run commands on multiple vCenters at the same time
 #I need to get around the prompts to continue, still working on that
+#add comment
 Set-PowerCLIConfiguration -DefaultVIServerMode Multiple -Scope AllUsers -Confirm:$False
 
 #This deals with the fact the certificate installed on vCenter is self signed
