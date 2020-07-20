@@ -1,3 +1,4 @@
+#MOS SQL Clusters running on Windows Server 2012 R2 - This will stop all maintenance tasks from kicking off on a schedule.
 $servers = @(
     'halnmossqlp03a'
     'halnmossqlp03b'
@@ -15,10 +16,6 @@ $servers = @(
     'halnmossqlp06b'
     'hsvlmossqlp06a'
     'hsvlmossqlp06b'
-    'halnmossqlp07a'
-    'halnmossqlp07b'
-    'hsvlmossqlp07a'
-    'hsvlmossqlp07b'
     'hsvlmossqlp08a'
     'halnmossqlp08b'
     'hsvlmossqlp08a'
