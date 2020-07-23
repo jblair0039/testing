@@ -23,10 +23,10 @@ $servers = @(
     )
 foreach ($server in $servers) {
     Invoke-Command {
-        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\TaskScheduler\Maintenance Configurator" /ENABLE
-        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\TaskScheduler\Idle Maintenance" /ENABLE
-        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\TaskScheduler\Regular Maintenance" /ENABLE
-        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\TaskScheduler\Manual Maintenance" /ENABLE
-        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\Defrag\ScheduledDefrag" /ENABLE
+        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\TaskScheduler\Maintenance Configurator" /DISABLE
+        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\TaskScheduler\Idle Maintenance" /DISABLE
+        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\TaskScheduler\Regular Maintenance" /DISABLE
+        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\TaskScheduler\Manual Maintenance" /DISABLE
+        C:\Users\_H_jordan.blair\Downloads\PSTools\psexec.exe \\$server -s schtasks /change /tn "\Microsoft\Windows\Defrag\ScheduledDefrag" /DISABLE
         }
     }
